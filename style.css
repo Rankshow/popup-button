@@ -29,6 +29,9 @@ body {
     color: white;
     font-weight: bold;
 }
+.btn-okay:hover {
+   opacity: .7;
+}
 .btn:hover {
     background-color: gray;
 }
@@ -36,10 +39,10 @@ body {
 .popup {
     background-color: #fff;
     position: absolute;
-    top: 0;
+    left: 50%;
     right: 50%;
     width: 300px;
-    height: 230px;
+    height: 250px;
     text-align: center; 
     border-radius: 20px;
     padding: 1em;
@@ -47,12 +50,12 @@ body {
     visibility: hidden;
 }
 
-/* show popu with javascript */
-.openpopup {
+/* show popup with javascript */
+.open-popup {
     visibility: visible;
     transition: 3s;
     transform: translate(-50%, -50%) scale(1.2);
-    transition: transform 0.4s, top 0.4;
+    transition: transform 3s, top 0.6;
 }
 img {
   border-radius: 50%;
